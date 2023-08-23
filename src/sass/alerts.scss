@@ -1,0 +1,212 @@
+.alert-link {
+  color: $h_light_blue_m !important;
+}
+
+.alert {
+  border-radius: 3px;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  i {
+    font-size: 24px;
+  }
+  .alert-link {
+    font-weight: normal;
+    font-weight: 500;
+    color: inherit;
+    filter: brightness(120%) contrast(100%);
+  }
+  &.alert-dismissible .close {
+    padding: 0.6rem 1.25rem;
+    text-shadow: none;
+  }
+  &.alert-primary {
+    color: $sky_dark_5;
+    background: $sky_light_5;
+    @include border-opacity($sky_light_4, 0.3);
+  }
+  &.alert-success {
+    color: $green_dark_5;
+    background: $green_light_5;
+    @include border-opacity($green_light_4, 0.3);
+  }
+  &.alert-info {
+    color: $cyan_dark_5;
+    background: $cyan_light_5;
+    @include border-opacity($cyan_light_4, 0.3);
+  }
+  &.alert-danger {
+    color: $red_dark_5;
+    background: $red_light_5;
+    @include border-opacity($red_light_4, 0.3);
+  }
+  &.alert-warning {
+    color: $yellow_dark_5;
+    background: $yellow_light_5;
+    @include border-opacity($yellow_light_4, 0.3);
+  }
+  &.alert-secondary {
+    color: $grey_dark_5;
+    background: $grey_light_5;
+    @include border-opacity($grey_light_4, 0.3);
+  }
+  &.alert-light {
+    color: $light_80;
+    background: $h-gray-2;
+    @include border-opacity($light_10, 1);
+  }
+  &.alert-dark {
+    color: $white;
+    background: $dark;
+    &.alert-dismissible {
+      .close:not(:disabled):not(.disabled):focus,
+      .close:not(:disabled):not(.disabled):hover {
+        color: $white;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+    @include border-opacity($dark_20, 1);
+  }
+  &.alert-inv {
+    &.alert-inv-primary {
+      background: $h_light_blue_m;
+      color: $sky_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+    &.alert-inv-info {
+      background: $cyan;
+      color: $cyan_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+    &.alert-inv-success {
+      background: $green;
+      color: $green_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+    &.alert-inv-warning {
+      background: $yellow;
+      color: $yellow_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+    &.alert-inv-danger {
+      background: $red;
+      color: $red_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+    &.alert-inv-secondary {
+      background: $grey;
+      color: $grey_light_5;
+      &.alert-dismissible {
+        .close:not(:disabled):not(.disabled):focus,
+        .close:not(:disabled):not(.disabled):hover {
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.alert-wth-icon {
+    padding-left: 54px;
+    position: relative;
+    .alert-icon-wrap {
+      display: block;
+      text-align: center;
+      padding-top: 12px;
+      height: 100%;
+      width: 54px;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  top: 0;
+}
+
+.promotion-alert {
+  background-color: #e8d93b;
+  padding: 8px 15px;
+  color: #000;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.promotion-alert .l-icon {
+  width: 22px;
+  margin-right: 10px;
+  float: left;
+}
+.promotion-alert .l-icon svg {
+  fill: #333;
+  stroke-width: 0.1px;
+}
+.promotion-alert .l-icon svg path {
+  fill: #333;
+  stroke: #333;
+}
+.promotion-alert__content p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+  float: left;
+  width: calc(100% - 38px);
+}
+/*Sweet-alert*/
+
+.sweet-alert {
+  border-radius: 2px;
+  font-family: inherit;
+  h2 {
+    font-weight: 400;
+    color: $dark;
+  }
+  button {
+    box-shadow: none !important;
+    font-size: inherit;
+  }
+}

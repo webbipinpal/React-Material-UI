@@ -1,0 +1,10 @@
+/*media css start here*/
+.media {
+	display: flex;
+	align-items: flex-start;
+  }
+  
+  .media-body {
+	flex: 1;
+  }
+/*media css end here*/ 
